@@ -34,7 +34,7 @@ export default function createFormatter(Immutable) {
   const reference = (object, config) => {
     if (typeof object === 'undefined')
       return ['span', nullStyle, 'undefined'];
-    else if (object === 'null')
+    else if (object === null)
       return ['span', nullStyle, 'null'];
 
     return ['object', {object, config}];
