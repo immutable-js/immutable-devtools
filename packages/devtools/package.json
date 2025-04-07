@@ -1,9 +1,11 @@
 {
-  "name": "immutable-devtools",
-  "version": "0.1.5",
+  "name": "@jdeniau/immutable-devtools",
+  "version": "0.2.0",
   "description": "Chrome Dev Tools formatter for the Immutable JS library",
   "main": "dist/index.js",
-  "files": ["dist", "before.png", "after.png"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "webpack --config ./webpack.config.js",
     "prepublish": "npm run-script build",
@@ -24,8 +26,8 @@
     "immutable": "^4.0.0-rc.9",
     "immutable3": "^3.8.1"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/andrewdavey/immutable-devtools"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdeniau/immutable-devtools"
   }
 }
