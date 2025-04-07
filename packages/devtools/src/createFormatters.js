@@ -1,10 +1,18 @@
+const orange = 'light-dark(rgb(232,98,0), rgb(255, 150, 50))';
+const purple = 'light-dark( #881391, #D48CE6)';
+const gray = 'light-dark(rgb(119,119,119), rgb(201, 201, 201))';
+
 const listStyle = {style: 'list-style-type: none; padding: 0; margin: 0 0 0 12px; font-style: normal; position: relative'};
-const immutableNameStyle = {style: 'color: rgb(232,98,0); position: relative'};
-const keyStyle = {style: 'color: #881391'};
-const defaultValueKeyStyle = {style: 'color: #777'};
-const alteredValueKeyStyle = {style: 'color: #881391; font-weight: bolder'};
-const inlineValuesStyle = {style: 'color: #777; font-style: italic; position: relative'}
-const nullStyle = {style: 'color: #777'};
+const immutableNameStyle = {
+  style: `color: ${orange}; position: relative`,
+};
+const keyStyle = { style: `color: ${purple}` };
+const defaultValueKeyStyle = { style: `color: ${gray}` };
+const alteredValueKeyStyle = { style: `color: ${purple}; font-weight: bolder` };
+const inlineValuesStyle = {
+  style: `color: ${gray}; font-style: italic; position: relative`,
+};
+const nullStyle = { style: `color: ${gray}` };
 
 export default function createFormatter(Immutable) {
 
