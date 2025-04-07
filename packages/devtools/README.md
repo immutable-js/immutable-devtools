@@ -96,3 +96,10 @@ NODE_ENV=production webpack -p index.js
 ```
 
 See [#16](https://github.com/andrewdavey/immutable-devtools/issues/16) for more info.
+
+## Contributing
+
+1. Clone the project
+2. run `npm install`
+3. run `npm run build` on each file you change
+4. open the `index.html` located on root of the project and open the console.
