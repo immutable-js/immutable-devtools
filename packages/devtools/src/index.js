@@ -1,7 +1,7 @@
 import createFormatters from './createFormatters';
 
 // Check for globally defined Immutable and add an install method to it.
-if (typeof Immutable !== "undefined") {
+if (typeof Immutable !== 'undefined') {
   Immutable.installDevTools = install.bind(null, Immutable);
 }
 
@@ -9,7 +9,7 @@ if (typeof Immutable !== "undefined") {
 
 let installed = false;
 function install(Immutable) {
-  const gw = typeof window === "undefined" ? global : window;
+  const gw = typeof window === 'undefined' ? global : window;
 
   // Don't install more than once.
   if (installed === true) {
@@ -25,7 +25,7 @@ function install(Immutable) {
     ListFormatter,
     MapFormatter,
     SetFormatter,
-    StackFormatter
+    StackFormatter,
   } = createFormatters(Immutable);
 
   gw.devtoolsFormatters.push(
@@ -41,5 +41,4 @@ function install(Immutable) {
   installed = true;
 }
 
-module.exports = install;
 export default install;
