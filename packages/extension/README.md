@@ -31,7 +31,7 @@ Then all that's left to do is to load the code in "devtools.js".
 ## Running the code locally
 
 1. `npm install`
-2. `npm run dev`
+2. `npm run build`
 3. On Chrome:
    1. Open "chrome://extensions"
    2. Enable "Developer mode"
