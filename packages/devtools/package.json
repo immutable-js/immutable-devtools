@@ -1,5 +1,6 @@
 {
   "name": "@jdeniau/immutable-devtools",
+  "type": "module",
   "version": "0.2.0",
   "description": "Chrome Dev Tools formatter for the Immutable JS library",
   "main": "dist/index.js",
@@ -7,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "webpack --config ./webpack.config.js",
+    "build": "rollup -c",
     "prepublish": "npm run-script build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,12 +20,11 @@
   "author": "Andrew Davey",
   "license": "BSD",
   "devDependencies": {
-    "webpack": "^1.12.4",
-    "babel-loader": "^6.1.0",
-    "babel-core": "^6.1.4",
-    "babel-preset-es2015": "^6.1.4",
+    "@babel/core": "^7.27.1",
+    "@rollup/plugin-babel": "^6.0.4",
     "immutable": "^4.0.0-rc.9",
-    "immutable3": "^3.8.1"
+    "immutable3": "^3.8.1",
+    "rollup": "^4.40.2"
   },
   "repository": {
     "type": "git",
