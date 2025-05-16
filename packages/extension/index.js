@@ -1,4 +1,4 @@
-import installDevTools from 'immutable-devtools'
+import installDevTools from '@jdeniau/immutable-devtools'
 import Immutable from 'immutable'
 
 if (!window.__ImmutableJSDevToolsFormattersInstalled === true) {
