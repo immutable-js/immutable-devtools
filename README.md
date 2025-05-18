@@ -35,6 +35,10 @@ Chrome v47+ / Firefox v116+
 
 In Dev Tools, press F1 to load the Settings. Scroll down to the Console section and tick "Enable custom formatters".
 
+![](https://user-images.githubusercontent.com/1303660/36625688-48c2160e-195f-11e8-9a5f-ba9ea8553b06.png)
+
+![](https://cloud.githubusercontent.com/assets/1303660/18231278/a271ede6-72ad-11e6-8623-367f3e8eb686.png)
+
 ### Browser Extension
 
 You can directly install the browser extension for Chrome or Firefox. It automatically installs the formatters when you open the DevTools.
@@ -100,11 +104,29 @@ See [#16](https://github.com/andrewdavey/immutable-devtools/issues/16) for more 
 
 ## Contributing
 
+### devtools
+
 1. [Install yarn berry](https://yarnpkg.com/getting-started) if you don't have it already
 1. Clone the project
 1. run `yarn install`
 1. run `yarn run build` on each file you change
 1. open the `index.html` located in the `packages/devtools` directory and open the console.
+
+### Browser extension
+
+1. `yarn install`
+2. `yarn build`
+3. On Chrome:
+   1. Open "chrome://extensions"
+   2. Enable "Developer mode"
+   3. Click "Load unpacked" and select the "packages/extension/extension" directory
+4. On Firefox:
+   1. On your console, go to the `/packages/extension/extension` directory
+   2. Run `web-ext run` (you may need to install [web-ext](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing_web-ext))
+5. Open devtools settings and enable custom formatters
+6. Open "/packages/extensions/test-page/index.html" to check everything looks as expected.
+
+Make sure to reload the extension after any changes.
 
 ## Original projects
 
