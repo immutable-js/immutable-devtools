@@ -1,5 +1,4 @@
 node_modules/*
-dist/
-extension/content-script.js
+extension/immutable-object-formatter.js
 .DS_Store
 *.zip
