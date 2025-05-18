@@ -12,16 +12,6 @@ Open the console and check that everything looks alright.
 <script src="test-v5.js"></script>
 
 <script>
-  const testChromeExtension = true;
-  if (!testChromeExtension) {
-    // Since we're only loading bundle.js now we can tell it to expose isRecord so it can be tested
-    // window.__ExposeIsRecordForTesting = true;
-    // var script = document.createElement('script');
-    // script.src = '../extension/bundle.js';
-  }
-</script>
-
-<script>
   function checkIfLoaded() {
     if (window.__ImmutableJSDevToolsFormattersInstalled !== undefined) {
       console.timeEnd('Load formatters');
