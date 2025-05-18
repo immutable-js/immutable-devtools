@@ -1,0 +1,24 @@
+{
+  "name": "@immutable/devtools",
+  "description": "Immutable.js DevTools",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "yarn workspaces foreach --all -pt run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@immutable/devtools": "workspace:^",
+    "@jdeniau/immutable-devtools": "workspace:^"
+  },
+  "packageManager": "yarn@4.9.1",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.41.0"
+  }
+}
