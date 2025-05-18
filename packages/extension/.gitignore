@@ -1,0 +1,4 @@
+node_modules/*
+extension/immutable-object-formatter.js
+.DS_Store
+*.zip
