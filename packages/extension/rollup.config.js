@@ -1,4 +1,3 @@
-import { exec } from 'node:child_process';
 import { babel } from '@rollup/plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 

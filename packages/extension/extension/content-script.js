@@ -1,5 +1,12 @@
 const script = document.createElement('script');
-script.src = chrome.runtime.getURL('immutable-object-formatter.js');
+
+// type module to avoid altering current page
+script.type = 'module';
+
+// browser is for firefox, else fallback to chrome
+const target = browser ?? chrome;
+
+script.src = target.runtime.getURL('immutable-object-formatter.js');
 script.onload = function () {
   this.remove();
 };
