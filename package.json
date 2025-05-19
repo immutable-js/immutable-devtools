@@ -4,7 +4,8 @@
   "type": "module",
   "version": "0.0.0",
   "scripts": {
-    "build": "yarn workspaces foreach --all -pt run build"
+    "build": "yarn workspaces foreach --all -pt run build",
+    "postversion": "node build/update-version.js"
   },
   "workspaces": [
     "packages/*"
