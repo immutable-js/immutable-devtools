@@ -1,5 +1,5 @@
 {
-  "name": "immutablejs-console-object-formatters",
+  "name": "@immutable/devtools-extension",
   "type": "module",
   "version": "1.0.1",
   "description": "",

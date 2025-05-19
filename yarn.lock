@@ -1098,6 +1098,7 @@ __metadata:
     "@babel/core": "npm:^7.27.1"
     "@babel/preset-env": "npm:^7.27.2"
     "@immutable/devtools": "workspace:^"
+    "@jdeniau/immutable-devtools": "workspace:^"
     "@rollup/plugin-babel": "npm:^6.0.4"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     rollup: "npm:^4.41.0"
@@ -1127,7 +1128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jdeniau/immutable-devtools@npm:^0.3.0, @jdeniau/immutable-devtools@workspace:packages/devtools":
+"@jdeniau/immutable-devtools@npm:^0.3.0, @jdeniau/immutable-devtools@workspace:^, @jdeniau/immutable-devtools@workspace:packages/devtools":
   version: 0.0.0-use.local
   resolution: "@jdeniau/immutable-devtools@workspace:packages/devtools"
   dependencies:
