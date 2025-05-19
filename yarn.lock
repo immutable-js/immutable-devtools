@@ -1097,7 +1097,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.27.1"
     "@babel/preset-env": "npm:^7.27.2"
-    "@jdeniau/immutable-devtools": "npm:^0.3.0"
+    "@jdeniau/immutable-devtools": "workspace:^"
     "@rollup/plugin-babel": "npm:^6.0.4"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     immutable: "npm:^5.1.2"
@@ -1139,13 +1139,6 @@ __metadata:
   dependencies:
     minipass: "npm:^7.0.4"
   checksum: 10c0/c25b6dc1598790d5b55c0947a9b7d111cfa92594db5296c3b907e2f533c033666f692a3939eadac17b1c7c40d362d0b0635dc874cbfe3e70db7c2b07cc97a5d2
-  languageName: node
-  linkType: hard
-
-"@jdeniau/immutable-devtools@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@jdeniau/immutable-devtools@npm:0.3.0"
-  checksum: 10c0/00ff6d165f8cef60ff1f976b722f47bd27e871e852de8473ad3f7b4b4be5919fb10379e80cb9f42df3dcc6875553b376d385a7b861aaffaa24a7bc1366312d36
   languageName: node
   linkType: hard
 

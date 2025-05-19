@@ -212,6 +212,28 @@ export default function createFormatter(Immutable) {
     }
   };
 
+  const RangeFormatter = {
+    header(o) {
+      if (!Immutable.isSeq(o))
+        return null;
+
+      // there is no proper way to check if the object is a Range for now
+      if (
+        typeof o._start === 'undefined' || 
+        typeof o._end === 'undefined' || 
+        typeof o._step === 'undefined' || 
+        typeof o.toString !== 'function' 
+      ) {
+        return null
+      }
+
+      const out = o.toString().replace(/^Range /, '');
+
+      return ['span', ['span', immutableNameStyle, 'Range'], ['span', out]];
+    },
+    hasBody: () => false,
+  };
+
   return {
     RecordFormatter,
     OrderedMapFormatter,
@@ -219,6 +241,7 @@ export default function createFormatter(Immutable) {
     ListFormatter,
     MapFormatter,
     SetFormatter,
-    StackFormatter
+    StackFormatter,
+    RangeFormatter
   }
 }

@@ -15,30 +15,33 @@ function runTests(){
     var f = Foo()
     console.log("Expand this and check child renders as a Map", f)
 
-    window.record = new ABRecord();
-    window.record2 = new ABRecord({a: 2});
-    console.log(window.record);
-    console.log(window.record2);
+    const record = new ABRecord();
+    const record2 = new ABRecord({a: 2});
+    console.log(record);
+    console.log(record2);
 
-    window.orderedMap = Immutable.OrderedMap({key: "value"});
-    window.orderedMap2 = Immutable.OrderedMap([["key", "value"], ["key2", "value2"]]);
-    console.log(window.orderedMap);
-    console.log(window.orderedMap2);
+    const orderedMap = Immutable.OrderedMap({key: "value"});
+    const orderedMap2 = Immutable.OrderedMap([["key", "value"], ["key2", "value2"]]);
+    console.log(orderedMap);
+    console.log(orderedMap2);
 
-    window.orderedSet = Immutable.OrderedSet(["hello", "aaa"]);
-    console.log(window.orderedSet);
+    const orderedSet = Immutable.OrderedSet(["hello", "aaa"]);
+    console.log(orderedSet);
 
-    window.list = Immutable.List(["hello", "world"]);
-    console.log(window.list)
+    const list = Immutable.List(["hello", "world"]);
+    console.log(list)
 
-    window.map = Immutable.Map({hello: "world"})
-    console.log(window.map)
+    const map = Immutable.Map({hello: "world"})
+    console.log(map)
 
-    window.set = Immutable.Set(["hello", "aaa"])
-    console.log(window.set)
+    const set = Immutable.Set(["hello", "aaa"])
+    console.log(set)
 
-    window.stack = Immutable.Stack(["hello", "aaa"])
-    console.log(window.stack)
+    const stack = Immutable.Stack(["hello", "aaa"])
+    console.log(stack)
+
+    const range = Immutable.Range(0, 10, 2);
+    console.log(range);
 
     console.log("shoudln't cause error", Immutable.Record.prototype)
 

@@ -26,6 +26,7 @@ function install(Immutable) {
     MapFormatter,
     SetFormatter,
     StackFormatter,
+    RangeFormatter,
   } = createFormatters(Immutable);
 
   gw.devtoolsFormatters.push(
@@ -35,7 +36,8 @@ function install(Immutable) {
     ListFormatter,
     MapFormatter,
     SetFormatter,
-    StackFormatter
+    StackFormatter,
+    RangeFormatter
   );
 
   installed = true;
