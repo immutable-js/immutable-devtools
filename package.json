@@ -2,7 +2,7 @@
   "name": "@immutable/devtools",
   "description": "Immutable.js DevTools",
   "type": "module",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "scripts": {
     "build": "yarn workspaces foreach --all -pt run build",
     "postversion": "node build/update-version.js"
