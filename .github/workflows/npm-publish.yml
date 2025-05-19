@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - run: corepack enable
       - run: yarn install --immutable
     #   - run: npm test
 
@@ -31,7 +32,9 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
+      - run: corepack enable
       - run: yarn install --immutable
-      - run: yarn workspace @jdeniau/immutable-devtools npm publish --provenance
+      - run: npm publish --provenance
+        working-directory: ./packages/devtools
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdeniau/immutable-devtools"
+    "url": "git+https://github.com/immutable-js/immutable-devtools.git"
   }
 }
