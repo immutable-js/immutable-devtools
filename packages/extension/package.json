@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@jdeniau/immutable-devtools": "^0.3.0",
+    "@jdeniau/immutable-devtools": "workspace:^",
     "immutable": "^5.1.2"
   },
   "devDependencies": {

@@ -1,10 +1,10 @@
 <html>
   <head>
     <title>Immutable DevTools Demo</title>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.7.6/immutable.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/5.0.3/immutable.js"></script>
-    <script src="dist/index.js"></script>
-    <script id="demoScript">
+    <script id="demoScript" type="module">
+      import installDevTools from './dist/index.js';
+      
       var MyRecord = Immutable.Record({
         value: 'original',
         value2: 'original2',
@@ -71,6 +71,8 @@
       console.log('Nested Records', nestedRecords)
 
       console.log("Null string", Immutable.List.of("hello", "null", null, 'undefined', undefined));
+      
+      console.log("Range", Immutable.Range(0, 10, 2));
     </script>
   </head>
   <body>

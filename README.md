@@ -23,7 +23,7 @@ The library currently has formatters for:
 - [x] `Set` & `OrderedSet`
 - [x] `Stack`
 - [x] `Record`
-- [ ] `Range` (let me know if you use this :-), add :+1: to [#21](https://github.com/andrewdavey/immutable-devtools/issues/21))
+- [x] `Range`
 - [ ] `Repeat` (if you wish this, add :+1: to [#22](https://github.com/andrewdavey/immutable-devtools/issues/22))
 - [ ] `Seq` — I do not have an idea how to display it. If you know, [write it down into #23](https://github.com/andrewdavey/immutable-devtools/issues/23)
 
