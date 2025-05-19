@@ -65,6 +65,11 @@ installDevTools(Immutable);
 
 Note: You probably only want this library for debug builds, so perhaps wrap with `if (DEBUG) {...}` or similar.
 
+#### Why "@jdeniau" ?
+
+We do not have access to the ["@immutable"](https://www.npmjs.com/org/immutable) organization on npm. I have opened a dispute for transfert, but it is not yet resolved.
+Until then, we will use temporary name "@jdeniau" for the package, but hopefully it will be transfered to the immutable organization in the future. If not, we will rename it to something else.
+
 ### Using with webpack
 
 You could use `webpack.DefinePlugin` to create a condition that will be allowed to install `immutable-devtools` in the debug build but unreachable in the production build:
