@@ -135,6 +135,6 @@ Make sure to reload the extension after any changes.
 
 ## Original projects
 
-This projet is a fork of https://github.com/andrewdavey/immutable-devtools by Pavel Lang and Andrew Davey, and https://github.com/mattzeunert/immutable-object-formatter-extension by Matt Zeunert.
+This projet is a fork of [andrewdavey/immutable-devtools](https://github.com/andrewdavey/immutable-devtools) by [Pavel Lang](https://github.com/langpavel) and [Andrew Davey](https://github.com/andrewdavey), and [mattzeunert/immutable-object-formatter-extension](https://github.com/mattzeunert/immutable-object-formatter-extension) by [Matt Zeunert](https://github.com/mattzeunert).
 
-I tried to contact them via github and by mail, but I didn't get any answer. So I decided to fork it and maintain it on th immutable-js organization directly.
+I tried to contact them via github and by mail, but I didn't get any answer. So I decided to fork it and maintain it on the immutable-js organization directly.
