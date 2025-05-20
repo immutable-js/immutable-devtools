@@ -4,7 +4,7 @@ const script = document.createElement('script');
 script.type = 'module';
 
 // browser is for firefox, else fallback to chrome
-const target = browser ?? chrome;
+const target = typeof browser !== 'undefined' ? browser : chrome;
 
 script.src = target.runtime.getURL('immutable-object-formatter.js');
 script.onload = function () {
