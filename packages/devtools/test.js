@@ -58,4 +58,7 @@ function runTests(Immutable) {
 
   var stack = Immutable.Stack(['hello', 'aaa']);
   console.log(stack);
+
+  var range = Immutable.Range(0, 10, 2);
+  console.log(range);
 }

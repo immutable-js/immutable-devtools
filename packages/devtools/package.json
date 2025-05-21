@@ -23,7 +23,7 @@
     "@babel/core": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
     "@rollup/plugin-babel": "^6.0.4",
-    "immutable": "^4.0.0-rc.9",
+    "immutable": "^5.1.2",
     "immutable3": "^3.8.1",
     "rollup": "^4.40.2"
   },

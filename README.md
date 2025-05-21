@@ -115,7 +115,7 @@ See [#16](https://github.com/andrewdavey/immutable-devtools/issues/16) for more 
 1. Clone the project
 1. run `yarn install`
 1. run `yarn run build` on each file you change
-1. open the `index.html` located in the `packages/devtools` directory and open the console.
+1. open the `index.html` located in the `packages/devtools/demo` directory and open the console.
 
 ### Browser extension
 
