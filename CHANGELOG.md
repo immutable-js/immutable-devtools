@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### devtools
+
+- Use predicates instead of static methods [#3](https://github.com/immutable-js/immutable-devtools/pull/3) by [@jdeniau](https://github.com/jdeniau)
+
 ## 2.1.0
 
 - Range formatter [#2](https://github.com/immutable-js/immutable-devtools/pull/2) by [@jdeniau](https://github.com/jdeniau)
