@@ -128,7 +128,7 @@ export default function createFormatter(Immutable) {
 
   const ListFormatter = {
     header(o) {
-      if (!Immutable.List.isList(o))
+      if (!Immutable.isList(o))
         return null;
       return renderIterableHeader(o, 'List');
     },
@@ -142,7 +142,7 @@ export default function createFormatter(Immutable) {
 
   const StackFormatter = {
     header(o) {
-      if (!Immutable.Stack.isStack(o))
+      if (!Immutable.isStack(o))
         return null;
       return renderIterableHeader(o, 'Stack');
     },
@@ -156,7 +156,7 @@ export default function createFormatter(Immutable) {
 
   const MapFormatter = {
     header(o) {
-      if (!Immutable.Map.isMap(o))
+      if (!Immutable.isMap(o))
         return null;
       return renderIterableHeader(o, 'Map');
     },
@@ -171,7 +171,7 @@ export default function createFormatter(Immutable) {
 
   const OrderedMapFormatter = {
     header(o) {
-      if (!Immutable.OrderedMap.isOrderedMap(o))
+      if (!Immutable.isOrderedMap(o))
         return null;
       return renderIterableHeader(o, 'OrderedMap');
     },
@@ -185,7 +185,7 @@ export default function createFormatter(Immutable) {
 
   const SetFormatter = {
     header(o) {
-      if (!Immutable.Set.isSet(o))
+      if (!Immutable.isSet(o))
         return null;
       return renderIterableHeader(o, 'Set');
     },
@@ -200,7 +200,7 @@ export default function createFormatter(Immutable) {
 
   const OrderedSetFormatter = {
     header(o) {
-      if (!Immutable.OrderedSet.isOrderedSet(o))
+      if (!Immutable.isOrderedSet(o))
         return null;
       return renderIterableHeader(o, 'OrderedSet');
     },
