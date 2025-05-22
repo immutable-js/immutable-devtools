@@ -1,6 +1,6 @@
 {
-  "name": "Immutable.js Object Formatter",
-  "short_name": "Immutable.js Object Formatter",
+  "name": "Immutable.js devtools extension",
+  "short_name": "Immutable.js devtools",
   "description": "Makes Immutable JS objects more readable when they are logged to the console.",
   "version": "2.1.0",
   "manifest_version": 3,
