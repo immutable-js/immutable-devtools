@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "yarn workspace @immutable/devtools-extension run dev",
     "build": "yarn workspaces foreach --all -pt run build",
+    "test": "yarn workspaces foreach --all -pt run test",
     "version": "node build/update-version.js && git add packages/extension/extension/manifest.json && git add packages/*/package.json && yarn"
   },
   "workspaces": [
