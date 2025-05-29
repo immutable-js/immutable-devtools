@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "prepublish": "npm run-script build",
+    "prepublishOnly": "npm run-script build",
     "test": "jest"
   },
   "keywords": [
