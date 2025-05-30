@@ -29,10 +29,16 @@ function injectDemoSource() {
 const config = [
   {
     input: 'src/index.ts',
-    output: {
-      dir: 'dist',
-      format: 'es',
-    },
+    output: [
+      {
+        file: 'dist/index.mjs',
+        format: 'es',
+      },
+      {
+        file: 'dist/index.cjs',
+        format: 'cjs',
+      },
+    ],
     plugins: [
       babel({
         babelHelpers: 'bundled',

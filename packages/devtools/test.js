@@ -3,7 +3,7 @@
 import Immutable4 from 'immutable';
 import Immutable3 from 'immutable3';
 
-import installDevTools from './dist/index.js';
+import installDevTools from './dist/index.mjs';
 installDevTools(Immutable4);
 
 console.log('Testing with Immutable 4');
