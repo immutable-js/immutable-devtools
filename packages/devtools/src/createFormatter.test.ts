@@ -7,7 +7,7 @@ describe('List', () => {
     const list = List();
 
     const { ListFormatter } = createFormatters({ List, isList });
-
+    
     const formatted = ListFormatter.header(list);
     expect(formatted).toEqual([
       'span',
@@ -21,7 +21,6 @@ describe('List', () => {
       ],
       ['span', '[0]'],
     ]);
-
     expect(ListFormatter.hasBody(list)).toBe(false);
   });
 });

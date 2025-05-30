@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import type { RollupOptions } from 'rollup';
 import { babel } from '@rollup/plugin-babel';
 import nodeResolve from '@rollup/plugin-node-resolve';
 
@@ -25,14 +26,20 @@ function injectDemoSource() {
   };
 }
 
-const config = [
+const config: Array<RollupOptions> = [
   {
-    input: 'src/index.js',
+    input: 'src/index.ts',
     output: {
       dir: 'dist',
       format: 'es',
     },
-    plugins: [babel({ babelHelpers: 'bundled' })],
+    plugins: [
+      babel({
+        babelHelpers: 'bundled',
+        extensions: ['.js', '.ts'],
+        exclude: 'node_modules/**',
+      }),
+    ],
   },
   {
     input: 'demo/demo.js',
