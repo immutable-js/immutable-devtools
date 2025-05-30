@@ -1,5 +1,5 @@
 import * as Immutable from 'immutable';
-import installDevTools from '../dist/index.js';
+import installDevTools from '../dist/index.mjs';
 
 var MyRecord = Immutable.Record(
   {
