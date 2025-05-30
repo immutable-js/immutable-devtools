@@ -18,8 +18,8 @@
   "scripts": {
     "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true });\"",
     "build:types": "tsc",
-    "build:module": "yarn clean && rollup -c",
-    "build": "yarn run build:types && yarn run build:module",
+    "build:module": "rollup -c",
+    "build": "yarn clean && yarn run build:types && yarn run build:module",
     "lint:types": "tsc --noEmit",
     "lint": "yarn run lint:types",
     "prepublishOnly": "yarn build",
