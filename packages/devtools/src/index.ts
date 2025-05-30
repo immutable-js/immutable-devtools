@@ -1,15 +1,19 @@
-import createFormatters from './createFormatters';
+// TypeScript entry point for devtools package
+import createFormatters, {
+  DevToolsFormatter,
+  ImmutableDevtoolsFormatters,
+} from './createFormatters.ts';
 
 // Check for globally defined Immutable and add an install method to it.
+declare const Immutable: any;
+
 if (typeof Immutable !== 'undefined') {
-  Immutable.installDevTools = install.bind(null, Immutable);
+  (Immutable as any).installDevTools = install.bind(null, Immutable);
 }
 
-// I imagine most people are using Immutable as a CommonJS module though...
-
 let installed = false;
-function install(Immutable) {
-  const gw = typeof window === 'undefined' ? global : window;
+function install(Immutable: any) {
+  const gw = typeof window === 'undefined' ? (global as any) : (window as any);
 
   // Don't install more than once.
   if (installed === true) {
@@ -44,3 +48,5 @@ function install(Immutable) {
 }
 
 export default install;
+
+export type { DevToolsFormatter, ImmutableDevtoolsFormatters };
