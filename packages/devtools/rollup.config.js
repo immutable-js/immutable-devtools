@@ -1,5 +1,4 @@
 import fs from 'node:fs';
-import type { RollupOptions } from 'rollup';
 import { babel } from '@rollup/plugin-babel';
 import nodeResolve from '@rollup/plugin-node-resolve';
 
@@ -26,7 +25,8 @@ function injectDemoSource() {
   };
 }
 
-const config: Array<RollupOptions> = [
+/** @type {import('rollup').RollupOptions[]} */
+const config = [
   {
     input: 'src/index.ts',
     output: {
