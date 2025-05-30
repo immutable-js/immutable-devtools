@@ -43,7 +43,7 @@ In Dev Tools, press F1 to load the Settings. Scroll down to the Console section 
 
 You can directly install the browser extension for Chrome or Firefox. It automatically installs the formatters when you open the DevTools.
 
-- Firefox: https://addons.mozilla.org/fr/firefox/addon/immutable-js-console-formatter/
+- Firefox: https://addons.mozilla.org/fr/firefox/addon/immutable-js-devtool-extension/
 - Chrome: https://chromewebstore.google.com/detail/immutablejs-object-format/lfdmhpmheemfkgjpifhenbkgcaaopckp
 
 ### Install in project
