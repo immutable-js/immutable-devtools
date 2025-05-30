@@ -34,7 +34,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: corepack enable
       - run: yarn install --immutable
-      - run: yarn npm publish --provenance
+      - run: npm publish --provenance
         working-directory: ./packages/devtools
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
