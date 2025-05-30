@@ -18,7 +18,7 @@
     "build": "yarn run build:types && yarn run build:module",
     "lint:types": "tsc --noEmit",
     "lint": "yarn run lint:types",
-    "prepublishOnly": "npm run-script build",
+    "prepublishOnly": "yarn build",
     "test": "jest"
   },
   "keywords": [
