@@ -58,7 +58,7 @@ And enable with:
 
 ```js
 import * as Immutable from 'immutable';
-import installDevTools = '@jdeniau/immutable-devtools';
+import installDevTools from '@jdeniau/immutable-devtools';
 
 installDevTools(Immutable);
 ```
