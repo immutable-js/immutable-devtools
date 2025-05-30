@@ -1,7 +1,7 @@
 {
   "name": "@jdeniau/immutable-devtools",
   "type": "module",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Chrome Dev Tools formatter for the Immutable JS library",
   "exports": {
     ".": {
@@ -16,8 +16,9 @@
     "dist"
   ],
   "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true });\"",
     "build:types": "tsc",
-    "build:module": "rm -rf dist; rollup -c",
+    "build:module": "yarn clean && rollup -c",
     "build": "yarn run build:types && yarn run build:module",
     "lint:types": "tsc --noEmit",
     "lint": "yarn run lint:types",
