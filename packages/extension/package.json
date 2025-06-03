@@ -1,7 +1,7 @@
 {
   "name": "@immutable/devtools-extension",
   "type": "module",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "",
   "exports": "./index.js",
   "scripts": {
