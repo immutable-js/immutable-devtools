@@ -51,24 +51,19 @@ You can directly install the browser extension for Chrome or Firefox. It automat
 Then, in your project, install via npm:
 
 ```
-npm install --save-dev @jdeniau/immutable-devtools
+npm install --save-dev @immutable/devtools
 ```
 
 And enable with:
 
 ```js
 import * as Immutable from 'immutable';
-import installDevTools from '@jdeniau/immutable-devtools';
+import installDevTools from '@immutable/devtools';
 
 installDevTools(Immutable);
 ```
 
 Note: You probably only want this library for debug builds, so perhaps wrap with `if (DEBUG) {...}` or similar.
-
-#### Why "@jdeniau" ?
-
-We do not have access to the ["@immutable"](https://www.npmjs.com/org/immutable) organization on npm. I have opened a dispute for transfert, but it is not yet resolved.
-Until then, we will use temporary name "@jdeniau" for the package, but hopefully it will be transfered to the immutable organization in the future. If not, we will rename it to something else.
 
 ### Using with webpack
 
@@ -92,7 +87,7 @@ In your source you'd have something like this...
 ```javascript
 // index.js
 import * as Immutable from 'immutable';
-import installDevTools from '@jdeniau/immutable-devtools';
+import installDevTools from '@immutable/devtools';
 
 if (__DEV__) {
   installDevTools(immutable);

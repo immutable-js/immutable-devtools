@@ -1319,7 +1319,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.27.1"
     "@babel/preset-env": "npm:^7.27.2"
-    "@jdeniau/immutable-devtools": "workspace:^"
+    "@immutable/devtools": "workspace:^"
     "@rollup/plugin-babel": "npm:^6.0.4"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     immutable: "npm:^5.1.2"
@@ -1327,18 +1327,34 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@immutable/devtools@workspace:., @immutable/devtools@workspace:^":
+"@immutable/devtools-monorepo@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@immutable/devtools@workspace:."
+  resolution: "@immutable/devtools-monorepo@workspace:."
   dependencies:
     "@babel/core": "npm:^7.27.1"
     "@babel/preset-env": "npm:^7.27.2"
     "@immutable/devtools": "workspace:^"
-    "@jdeniau/immutable-devtools": "workspace:^"
     "@rollup/plugin-babel": "npm:^6.0.4"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     rollup: "npm:^4.41.0"
     ts-node: "npm:^10.9.2"
+  languageName: unknown
+  linkType: soft
+
+"@immutable/devtools@workspace:^, @immutable/devtools@workspace:packages/devtools":
+  version: 0.0.0-use.local
+  resolution: "@immutable/devtools@workspace:packages/devtools"
+  dependencies:
+    "@babel/core": "npm:^7.27.1"
+    "@babel/preset-env": "npm:^7.27.2"
+    "@babel/preset-typescript": "npm:^7.27.1"
+    "@jest/globals": "npm:^29.7.0"
+    "@rollup/plugin-babel": "npm:^6.0.4"
+    immutable: "npm:^5.1.2"
+    immutable3: "npm:^3.8.1"
+    jest: "npm:^29.7.0"
+    rollup: "npm:^4.40.2"
+    typescript: "npm:^5.8.0"
   languageName: unknown
   linkType: soft
 
@@ -1384,23 +1400,6 @@ __metadata:
   checksum: 10c0/61c5286771676c9ca3eb2bd8a7310a9c063fb6e0e9712225c8471c582d157392c88f5353581c8c9adbe0dff98892317d2fdfc56c3499aa42e0194405206a963a
   languageName: node
   linkType: hard
-
-"@jdeniau/immutable-devtools@workspace:^, @jdeniau/immutable-devtools@workspace:packages/devtools":
-  version: 0.0.0-use.local
-  resolution: "@jdeniau/immutable-devtools@workspace:packages/devtools"
-  dependencies:
-    "@babel/core": "npm:^7.27.1"
-    "@babel/preset-env": "npm:^7.27.2"
-    "@babel/preset-typescript": "npm:^7.27.1"
-    "@jest/globals": "npm:^29.7.0"
-    "@rollup/plugin-babel": "npm:^6.0.4"
-    immutable: "npm:^5.1.2"
-    immutable3: "npm:^3.8.1"
-    jest: "npm:^29.7.0"
-    rollup: "npm:^4.40.2"
-    typescript: "npm:^5.8.0"
-  languageName: unknown
-  linkType: soft
 
 "@jest/console@npm:^29.7.0":
   version: 29.7.0

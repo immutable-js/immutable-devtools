@@ -1,4 +1,4 @@
-import installDevTools from '@jdeniau/immutable-devtools';
+import installDevTools from '@immutable/devtools';
 import * as Immutable from 'immutable';
 
 // The code can be loaded and unloaded several times on the same page,

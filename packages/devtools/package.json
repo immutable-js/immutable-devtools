@@ -1,6 +1,7 @@
 {
-  "name": "@jdeniau/immutable-devtools",
+  "name": "@immutable/devtools",
   "type": "module",
+  "private": false,
   "version": "2.1.5",
   "description": "Chrome Dev Tools formatter for the Immutable JS library",
   "exports": {
