@@ -6,35 +6,33 @@ name: Publish package to NPM
 on:
   workflow_dispatch: ~
   release:
-    types: [created]
+    types: [published]
+
+permissions:
+  id-token: write  # Required for OIDC / npm
+  contents: read
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: corepack enable
-      - run: yarn install --immutable
-    #   - run: npm test
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
+          node-version: 24
+
       - run: corepack enable
+
       - run: yarn install --immutable
+
+      - run: yarn run build
+
+      # Ensure npm 11.5.1 or later is installed
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - run: npm publish --provenance
         working-directory: ./packages/devtools
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
