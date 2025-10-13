@@ -31,5 +31,5 @@ jobs:
       - name: Update npm
         run: npm install -g npm@latest
 
-      - run: npm publish --provenance
+      - run: npm publish
         working-directory: ./packages/devtools
