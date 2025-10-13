@@ -9,14 +9,11 @@ on:
     types: [published]
 
 permissions:
-  id-token: write  # Required for OIDC / npm
+  id-token: write # Required for OIDC / npm
   contents: read
 
 jobs:
-  build:
-
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
