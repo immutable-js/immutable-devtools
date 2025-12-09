@@ -83,3 +83,16 @@ console.log(
 );
 
 console.log('Range', Immutable.Range(0, 10, 2));
+
+console.log(
+  'List of scalars',
+  Immutable.List([
+    true,
+    false,
+    1,
+    'a',
+    Symbol('sym'),
+    new Date(),
+    BigInt(12345),
+  ])
+);
