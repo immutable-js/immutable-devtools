@@ -1,6 +1,7 @@
 const orange = 'light-dark(rgb(232,98,0), rgb(255, 150, 50))';
 const purple = 'light-dark( #881391, #D48CE6)';
 const gray = 'light-dark(rgb(119,119,119), rgb(201, 201, 201))';
+const green = 'light-dark(rgb(28, 128, 28), rgb(50, 200, 50))';
 
 const listStyle = {
   style:
@@ -16,6 +17,7 @@ const inlineValuesStyle = {
   style: `color: ${gray}; font-style: italic; position: relative`,
 };
 const nullStyle = { style: `color: ${gray}` };
+const numberBooleanStyle = { style: `color: ${green}` };
 
 export type DevToolsFormatter = {
   header: (object: any, config?: any) => any;
@@ -63,8 +65,16 @@ export default function createFormatters(
   };
 
   const reference = (object: any, config?: any) => {
-    if (typeof object === 'undefined') return ['span', nullStyle, 'undefined'];
-    else if (object === null) return ['span', nullStyle, 'null'];
+    if (typeof object === 'undefined') {
+      return ['span', nullStyle, 'undefined'];
+    } else if (object === null) {
+      return ['span', nullStyle, 'null'];
+    } else if (typeof object === 'boolean') {
+      return ['span', numberBooleanStyle, object ? 'true' : 'false'];
+    } else if (typeof object === 'number') {
+      return ['span', numberBooleanStyle, object];
+    }
+
     return ['object', { object, config }];
   };
 
@@ -163,7 +173,10 @@ export default function createFormatters(
 
   const ListFormatter: DevToolsFormatter = {
     header(o: any) {
-      if (!Immutable.isList(o)) return null;
+      if (!Immutable.isList(o)) {
+        return null;
+      }
+
       return renderIterableHeader(o, 'List');
     },
     hasBody,
