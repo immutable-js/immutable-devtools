@@ -1,10 +1,16 @@
 # CHANGELOG
 
-## Unreleased
+# Unreleased
 
 ### devtools
 
 - Use predicates instead of static methods [#3](https://github.com/immutable-js/immutable-devtools/pull/3) by [@jdeniau](https://github.com/jdeniau)
+
+## 2.1.1
+
+### extension
+
+- Run the formatter as a `world: "MAIN"` content script instead of injecting a `<script type="module">` into the page. The module load started before the page's own `<script type="importmap">` was parsed, which made the browser reject that import map and broke every module-based script on the page (GitHub, since they shipped an import map). The extension now adds no node to the DOM, needs no `web_accessible_resources`, and is no longer visible to the page. Requires Chrome 111+ / Firefox 128+.
 
 ## 2.1.0
 
